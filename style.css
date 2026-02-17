@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+    line-height: 1.6;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient( 135deg, #8fa9e1 , #2563eb);
+    background-color: aliceblue;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 55px;
+    background: white;
+    color: #2563eb;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    transform: scale(1.05);
+}
+
+/* FEATURES */
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+/* TESTIMONIALS */
+.testimonial-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.testimonial {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+/* PRICING */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.price-card {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.price-card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.highlight {
+    background: #2563eb;
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.feature-card:hover,
+.testimonial:hover,
+.price-card:hover {
+    transform: translateY(-10px);
+    background: #2563eb;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.5);
+}
